@@ -1,5 +1,5 @@
-import random # Import for random ship placements 
-import enum # Import for symbols enum 
+import random 
+import enum 
 
 
 # Defining an enum for player/ computer sympols 
@@ -31,7 +31,7 @@ def print_grid(grid, symbols_to_hide=["B"]):
                  if char in symbols_to_hide:
                       char = SYMBOL_COMPUTER
                  print_row.append(char)
-            print(f"{row_number} |" + "|".join(print_row) + "|") # Printing grid rows
+            print(f"{row_number} |" + "|".join(print_row) + "|")
             row_number += 1
 
 
@@ -40,20 +40,20 @@ def place_ships(grid, no_of_ships, ship_symbol):
     ships_placed = 0
     grid_size = len(grid[1]) * len(grid)
     while ships_placed < no_of_ships:
-        loc = random.randint(0, grid_size - 1) # Placing ship in random location
-        row = loc // len(grid[1]) # Row number
-        col = loc % len(grid[1]) # Column number 
-        if grid[row][col] == SYMBOL_EMPTY: # Check if location is empty 
-           grid[row][col] = ship_symbol # Place ship symbol 
+        loc = random.randint(0, grid_size - 1) 
+        row = loc // len(grid[1]) 
+        col = loc % len(grid[1]) 
+        if grid[row][col] == SYMBOL_EMPTY: 
+           grid[row][col] = ship_symbol 
            ships_placed += 1 
      
 # Allowing the player to attack
 def player_attack(computer_grid):
      while True:
           try:
-               move = input("Enter your attack (e.g., A5): ").upper()
-               col = ord(move[0]) - 65 # Convert letters into column index
-               row = int(move[1:]) - 1 # Convert numbers into row index 
+               move = input("Enter your attack (e.g., A5): \n").upper()
+               col = ord(move[0]) - 65 
+               row = int(move[1:]) - 1 
                if computer_grid[row][col] == SYMBOL_COMPUTER:
                     print("You hit a ship!")
                     computer_grid[row][col] = SYMBOL_HIT
