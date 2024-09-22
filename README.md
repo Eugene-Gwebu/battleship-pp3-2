@@ -5,19 +5,45 @@ enjoyed by two people sitting opposite each other as they attempt to destroy the
 fleet. It's an intense and exciting game that normally cannot be played without a partner. With this 
 digital version of the game players will be able to play at a moment's notice no matter where they are as long 
 as they have a smart device to connect them to the internet. They will no longer have to wait for a partner to enjoy the 
-game as they will be able to play online against the computer, and have the same excitement. This version of battleship 
-follows the same rules as the original, the user will play again the computer, they will each have 5 ships place randomly 
-on the grid and have 10 turns to destroy the other's fleet. 
+game as they will be able to play online against the computer, and have the same excitement. This new revised version of battleship 
+follows the same rules as the original, the user will play against the computer, they will each have 4 ships place randomly 
+on the grid and will take turns attacking eachother until one fleet is completeley destroyed. 
 
 ![](images/RESPONSIVE.png)
 
 ## Features
 
 * ### The Grid 
-* The grid is made up of a square that is ten cells in width and length, giving the players plenty of space to set up their fleet.
-* The rows are are labled from 1 to 10 for clarity and ease of use.
-* The columns are labeled A to J in order to give the ten by ten space, and are seperated by the pipe (|) symbol for readability.
-  
+* The grid is a 6x6 square, giving the players plenty of space to set up their flee.
+* The rows are are labled from 1 to 6 for clarity and ease of use.
+* The columns are labeled A to F in order to give the 6x6 space, and are seperated by the pipe (|) symbol for readability.
+* Each player has 4 ships placed on their grids. The computer's ships are hidden, and the player's ships are represented by the letter "P".
+* The grid size was originally 10x10, with 5 ships per player. This version of the game was too long as there is no limit to how many turns each player has.
+
+![](images/GRID.png) 
+
+* When the game starts, the player is instructed to enter a position on the grid, and given an input example (A5).
+
+![](images/INSTRUCTIONS.png)
+
+* When a player successfully hits the opponent's ship, the "X" symbol will be displayed, and the player's hits are counted above the grid.
+
+![](images/HIT.png)
+
+* Similarly, when the player misses a ship, the "O" symbol will be displayed, and the player will receive a message saying "You Missed!".
+
+![](images/MISS.png)
+
+* If a player repeats an input, they will be informed that they've already attacked that area, and told to try a different input.
+
+![](images/TRYAGAIN.png)
+
+* If the input is completely invalid, the player will be informed of the error, and receive an example for an appropriate input (A5).
+
+![](images/BADINPUT.png)
+
+* ### Future Features
+
 
 ## Gameplay  
 
@@ -27,7 +53,7 @@ on the grid and have 10 turns to destroy the other's fleet.
 * For the row the player must enter a number between 1 and 10, and a letter between A and J for the column.
 * After the user takes a turn they will receive feedback to let them know if they hit or missed.
 * The player wins once all five battleships are sunk.
-* If the player has not sunk all the ships after ten tries they will lose. 
+* If the player has not sunk all the ships after ten tries they will lose.
 
 
 ## Player Interaction 
