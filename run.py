@@ -63,7 +63,7 @@ def player_attack(computer_grid):
                     computer_grid[row][col] = SYMBOL_MISS
                     return False 
                else:
-                    print("You've already attacked this aread! Try again.")
+                    print("You've already attacked this area! Try again.")
           except (IndexError, ValueError): 
                print("Invalid Input. Please enter a valid attack strategy (e.g., A5).")
 
