@@ -11,6 +11,7 @@ on the grid and will take turns attacking eachother until one fleet is completel
 
 ![](images/RESPONSIVE.png)
 
+
 ## Features
 
 * ### The Grid 
@@ -63,7 +64,6 @@ on the grid and will take turns attacking eachother until one fleet is completel
 
 ## Player Interaction 
   
-
 * ### The Feedback  
 * At each turn the player will be informed about the outcome of the choices made in the game.
 * If a player places an invalid input, the game will let them know that it's not valid, and ask them to try again.
@@ -75,13 +75,24 @@ on the grid and will take turns attacking eachother until one fleet is completel
 
 ## Testing 
 
-![](PEP8.png)
+* ### Pep8
+* Testing through pep8 returned no errors after after fixing all indentations and syntax.
+
+![](images/PEP8.png)
 
 ##Bugs
-* The code has a lot of bugs including indentation errors incorrectly written methods. 
+* The only bug remainign, is that the invalid input response for when the user enters an input that doesn't exist doesn't display.
 
-* ### Pep8
-* Testing through pep8 returned sixteen error messages, and so the code did not pass this test.
+
+## Deployment 
+
+* ### Steps
+* This project was built and deployed using Code Institute's Heroku Terminal.
+* I created a new Heroku application.
+* I made sure the Config Vars settings were done according to the requirements.
+* I connected the github repository to the Heroku app.
+* I successfully committed the changes from gitpod to the repository.
+* The app was successfully deployed on Heroku. 
   
 
 ## Credit
@@ -90,11 +101,7 @@ on the grid and will take turns attacking eachother until one fleet is completel
 * The layout of the game is fairly simple, I looked at some online examples, the first one from this [Website](https://copyassignment.com/battleship-game-code-in-python/)
 * From this site I was able to see the basic and simple layout of the grid.
 * I originally planned to allow the user to choose the grid size, but I wasn't able to figure out the right methods to make it work.
-* I used chatgpt to double check any syntax errors in my code, and to remove any unnecessary elements that were not useful in the code.
-* The majority of my project was done by following various YouTube tutorials and using them to get my desired outcome.
-* The main video I used came from the Knowledge Mavens YouTube [Channel](https://www.youtube.com/watch?v=alJH_c9t4zw&ab_channel=KnowledgeMavens), this video guided me through most of the methods and steps, but I changed the code to simplify it to what I understand.
-* Unfortunately I could not get the game to function. The window after deployment only displays an error message.
-* Further time is needed to understand the concepts of python and its logic. 
-
-
-
+* I give credit to my mentor Sandeep for showing me how to simplify everything, and use basic funstions for each step.
+* The majority of my project was done by following my mentor's example for how to outline each function before writing the code.
+* My fellow students on Stack were a great help when I wasn't sure about something. 
+* The tutors helped me with any debugging that I could not figure out on my own. 
