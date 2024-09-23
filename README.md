@@ -43,17 +43,22 @@ on the grid and will take turns attacking eachother until one fleet is completel
 ![](images/BADINPUT.png)
 
 * ### Future Features
+* In the next version of the game, I would like to allow two players to play through seperate computers.
+* In order to make the game more competitive, I can limit the amount of turns each player has. Then the game can end once one or both players are out of turns.
+* The player(s) can enter their names at the start of the game, so each board and each turn is addressed to the player's name.
+* Some ships can be larger than 1 cell. 
 
 
 ## Gameplay  
 
 * ### The Rules
-* The user will not be able to see the five ships on the grid that will be randomly placed.
+* The player will not be able to see where the opponent's ships are placed.
 * They will be prompted to pick a row and a column.
-* For the row the player must enter a number between 1 and 10, and a letter between A and J for the column.
+* For the row the player must enter a number between 1 and 6, and a letter between A and F for the column.
 * After the user takes a turn they will receive feedback to let them know if they hit or missed.
-* The player wins once all five battleships are sunk.
-* If the player has not sunk all the ships after ten tries they will lose.
+* The player wins once all 4 battleships are sunk.
+* The first one to sink 4 ships will win the game.
+* The user has unlimited turns. 
 
 
 ## Player Interaction 
@@ -63,9 +68,9 @@ on the grid and will take turns attacking eachother until one fleet is completel
 * At each turn the player will be informed about the outcome of the choices made in the game.
 * If a player places an invalid input, the game will let them know that it's not valid, and ask them to try again.
 * They will also be informed if they've added an input that they've previously written, and be asked to place a new one.
-* When the player misses a shot, they will receive a message to let them know, and the area where they missed will be marked with a minus symbol (-).
-* When a player makes a successful hit, they will receive a message, and that area will be marked with an X.
-* When a ship is sunk, they will receive the message "You sank all 5 battleships!".
+* When the player misses a shot, they will receive a message to let them know, and the area where they missed will be marked with a. "O".
+* When a player makes a successful hit, they will receive a message, and that area will be marked with an "X".
+* When all ships are sunk, they will receive the message"Well Done! You've sunk your opponent's battleships. You Win!".
 
 
 ## Testing 
