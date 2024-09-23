@@ -65,7 +65,7 @@ def player_attack(computer_grid):
                else:
                     print("You've already attacked this area! Try again.")
           except (IndexError, ValueError): 
-               print("Invalid Input. Please enter a valid attack strategy (e.g., A5).")
+               print("Invalid Input. Please enter a valid attack strategy. Your input must include a letter, followed by a number (e.g., A5).")
 
 
 # Allowing the computer to attack 
@@ -116,7 +116,7 @@ def start_game():
 
           # Check if the player won 
           if player_no_of_hits == 4:
-               print("Well Done! You've sunk your opponent's battleships!")
+               print("Well Done! You've sunk your opponent's battleships. You Win!")
                break
 
           # Computer's turn 
@@ -132,6 +132,4 @@ def start_game():
 
 
 if __name__ == "__main__":
-               start_game()
-
-          
+               start_game()       
